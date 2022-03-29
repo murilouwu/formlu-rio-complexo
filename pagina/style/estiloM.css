@@ -1,0 +1,50 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url(../imagens/fundoM.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.meio{
+	border-radius: 20px;
+	margin-top: 25vh;
+	margin-left: 15vw;
+	background-color: rgba(50, 23, 97, 0.50);
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	width: 70vw;
+}
+.barra{
+	margin-top: 1vh;
+	width: 65vw;
+	height: 3vh;
+	background-color: rgba(110, 73, 173, 0.60);
+	color: rgba(229, 220, 245, 0.70);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: Comic Sans MS;
+}
+.bt{
+	margin-top: 0.2vh;
+	border-radius: 20px;
+	border: 0px;
+	background-color: rgba(50, 23, 97, 0.40);
+	color: rgba(229, 220, 245, 0.70);
+	width: 4vw;
+	height: 2.5vh;
+}
+.bt:hover{
+	margin-top: 0px;
+	background-color: rgba(50, 23, 97, 0.80);
+	color: rgba(229, 220, 245, 1.0);
+	width: 5vw;
+	height: 3vh;
+}
