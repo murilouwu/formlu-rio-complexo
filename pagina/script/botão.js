@@ -1,43 +1,43 @@
 var bt1 = document.querySelector('#b1');
-var cont1 = document.querySelector('.dp');
-
-var bt2 = document.querySelector('#b2');
-var cont2 = document.querySelector('.end');
-
-var bt3 = document.querySelector('#b3');
-var cont3 = document.querySelector('.con');
-
-var bt4 = document.querySelector('#b4');
-var cont4 = document.querySelector('.form');
+var div1 = document.querySelector('.dp');
 
 bt1.addEventListener('click', function() {
-	if(cont1.style.display === 'block'){
-		cont1.style.display = 'none';
+	if(div1.style.display === 'block'){
+		div1.style.display = 'none';
 	}else{
-		cont1.style.display = 'block';
+		div1.style.display = 'block';
 	}
 });
+
+var bt2 = document.querySelector('#b2');
+var div2 = document.querySelector('.end');
 
 bt2.addEventListener('click', function() {
-	if(cont2.style.display === 'block'){
-		cont2.style.display = 'none';
+	if(div2.style.display === 'block'){
+		div2.style.display = 'none';
 	}else{
-		cont2.style.display = 'block';
+		div2.style.display = 'block';
 	}
 });
+
+var bt3 = document.querySelector('#b3');
+var div3 = document.querySelector('.con');
 
 bt3.addEventListener('click', function() {
-	if(cont3.style.display === 'block'){
-		cont3.style.display = 'none';
+	if(div3.style.display === 'block'){
+		div3.style.display = 'none';
 	}else{
-		cont3.style.display = 'block';
+		div3.style.display = 'block';
 	}
 });
 
+var bt4 = document.querySelector('#b4');
+var div4 = document.querySelector('.form');
+
 bt4.addEventListener('click', function() {
-	if(cont4.style.display === 'block'){
-		cont4.style.display = 'none';
+	if(div4.style.display === 'block'){
+		div4.style.display = 'none';
 	}else{
-		cont4.style.display = 'block';
+		div4.style.display = 'block';
 	}
 });
