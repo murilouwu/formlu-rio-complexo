@@ -1,6 +1,12 @@
+@font-face{
+	font-family: 'blood';
+	src: url('../fonts/BloodFont.ttf') format('truetype');
+}
 *{
 	padding: 0px;
 	margin: 0px;
+	cursor: none;
+	font-family: 'blood';
 }
 body{
 	background-image: url(../imagens/fundoM.jpg);
@@ -9,9 +15,21 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 }
+*::-webkit-scrollbar{
+
+	display: none;
+}
+.mouse{
+	z-index: 1;
+	width: 4vw;
+	height: auto;
+	position: absolute;
+	transition: all 0.05s;
+	display: block;
+}
 .meio{
 	border-radius: 20px;
-	margin-top: 15vh;
+	margin-top: 12vh;
 	margin-left: 15vw;
 	background-color: rgba(230, 230, 230, 0.5);
 	display: flex;
@@ -23,15 +41,15 @@ body{
 .barra{
 	margin-top: 1vh;
 	width: 65vw;
-	height: 3vh;
+	height: 4vh;
 	background-color: rgba(228, 59, 59, 0.6);
-	color: rgba(233, 216, 216, 0.7);
+	color: rgba(233, 216, 216, 1);
 	border-radius: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	font-family: Comic Sans MS;
+	font-size: 90%;
 }
 .bt{
 	border-radius: 20px;
@@ -59,7 +77,7 @@ body{
 	background-color: rgba(233, 153, 153, 0.7);
 	color: rgb(245, 220, 220);
 	width: 60vw;
-	height: 20vh;
+	height: 25vh;
 	display: none;
 	justify-content: center;
 	align-items: center;
@@ -73,26 +91,32 @@ body{
 	width: auto;
 	height: 30vh;
 }
+#logo:hover{
+	margin-top: -1vh;
+	margin-left: -1vw;
+	height: 33vh;
+}
 label{
 	margin-left: 0vh;
 	color: rgb(245, 220, 220);
-	font-family: Comic Sans MS;
 	font-weight: bold;
+	font-size: 80%;
 }
 .in{
 	margin-bottom: 1vh;
+	height: 4vh;
 	border: 0;
 	border-radius: 5px;
 	background-color: rgba(138, 54, 54, 0.7);
 	color: rgb(245, 220, 220);
 	text-align: center;
-	font-family: Comic Sans MS;
 	font-weight: bold;
 }
 .in::-webkit-input-placeholder{
     color: rgb(245, 220, 220);
     text-align: center;
 	opacity: 40%;
+	font-size: 80%;
 }
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -100,20 +124,22 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 #a{
 	margin-top: 1vh;
-	height: 15vh;
+	width: 12vw;
+	height: 13vh;
 }
 #a::-webkit-input-placeholder{
+
 	text-align: center;
 }
 .sus{
 	display: flex;
 	flex-direction: column;
-	margin-left: 2vw;
+	margin-left: 1vw;
 }
 input[type=checkbox] {
 	position: relative;
 	cursor: pointer;
-	margin-bottom: 1vh;
+	margin-bottom: 2vh;
 }
 input[type=checkbox]:before {
 	content: "";
@@ -152,26 +178,30 @@ input[type=checkbox]:checked:after {
 	left: 3px;
 }
 .bu{
-		margin-left: 40vw;
-		margin-top: 10vh;
-		border: 0;
-		border-radius: 40px;
-		width: 20vw;
-		height: 10vh;
-		background-color: rgba(97, 23, 23, 1);
+	margin-left: 40vw;
+	margin-top: 5vh;
+	border: 0;
+	border-radius: 40px;
+	width: 20vw;
+	height: 10vh;
+	background-color: rgba(97, 23, 23, 1);
 	color: rgba(245, 220, 220, 1);
 	font-size: 5vh;
 }
 .bu:hover{
-		background-color: rgba(70, 23, 23, 1);
-		width: 25vw;
-		height: 15vh;
-		margin-left: 38vw;
+	background-color: rgba(70, 23, 23, 1);
+	width: 25vw;
+	height: 15vh;
+	margin-left: 38vw;
 }
 .bu:active{
-		background-color: rgba(70, 23, 23, 1);
-		width: 15vw;
-		height: 5vh;
-		margin-left: 43vw;
-		font-size: 3vh;
+	background-color: rgba(70, 23, 23, 1);
+	width: 15vw;
+	height: 5vh;
+	margin-left: 43vw;
+	font-size: 3vh;
+}
+.b{
+
+	display: block;
 }
