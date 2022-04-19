@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style\estiloM.css">
+		<title>Rpg Baki</title>
+	</head>
+	<body>
+		<img src="imagens\mouse.png" class="mouse">
+		<form method="post" class="form">
+			<div class="lin">
+				<fieldset class="col">
+					<legend><b>Personagem nomes:</b></legend>
+					<label class="lab">Nome:</label>
+					<input type="text" name="nome" class="in" placeholder="ex: Baki">
+					<label class="lab">Sobrenome:</label>
+					<input type="text" name="sobrenome" class="in" placeholder="ex: Hanma">
+					<label class="lab">Nome da familia:</label>
+					<input type="text" name="familia" class="in" placeholder="ex: Hanma">
+					<label class="lab">apelido:</label>
+					<input type="text" name="apelido" class="in" placeholder="ex: Campeão">
+				</fieldset>
+				<fieldset class="col" id="fiel">
+					<legend><b>Personagem Médidas:</b></legend>
+					<label class="lab">Idade:</label>
+					<input type="number" name="idade" class="in" placeholder="limite: 10 a 150" min="10" max="190">
+					<label class="lab">Altura:</label>
+					<input type="number" name="altura" class="in" placeholder="1.40 a 4" min="1.40" max="4">
+					<label class="lab">Peso:</label>
+					<input type="number" name="peso" class="in" placeholder="35 a 500" min="35" max="500">
+					<label class="lab">Porcentagem de gordura:</label>
+					<input type="number" name="idade" class="in" min="0" max="100">
+					<label class="lab">Tipo de corpo:</label>
+					<input type="text" name="tipo" class="in" placeholder="ex: Hectomorfo">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Personagem Personalidade:</b></legend>
+						<br><br><br><label class="lab">Em porcetagem %</label>
+						<label class="lab">Otimismo:</label>
+						<input type="number" name="otm" class="in" min="0" max="100">
+						<label class="lab">Raiva:</label>
+						<input type="number" name="rav" class="in" min="0" max="100">
+						<label class="lab">Seriedade:</label>
+						<input type="number" name="ser" class="in" min="0" max="100">
+						<label class="lab">Felicidade:</label>
+						<input type="number" name="fel" class="in" min="0" max="100">
+						<label class="lab">Perverção:</label>
+						<input type="number" name="per" class="in" min="0" max="100">
+						<label class="lab">Bondade:</label>
+						<input type="number" name="bom" class="in" min="0" max="100">
+				</fieldset>
+			</div>
+			<div class="lin">
+				<fieldset class="col">
+						<legend><b>Personagem Aributos:</b></legend>
+						<br><br><br>
+						<label class="lab">Força:</label>
+						<input type="number" name="otm" class="in" min="0" max="900">
+						<label class="lab">Velocidade:</label>
+						<input type="number" name="rav" class="in" min="0" max="900">
+						<label class="lab">Agilidade:</label>
+						<input type="number" name="ser" class="in" min="0" max="900">
+						<label class="lab">Inteligência:</label>
+						<input type="number" name="fel" class="in" min="0" max="900">
+						<label class="lab">Reflexo:</label>
+						<input type="number" name="per" class="in" min="0" max="900">
+						<label class="lab">Controle:</label>
+						<input type="number" name="bom" class="in" min="0" max="900">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Personagem Localização:</b></legend>
+						<br><br><br>
+						<label class="lab">Paiz:</label>
+						<input type="text" name="paiz" class="in" placeholder="ex: Japão">
+						<label class="lab">Continente:</label>
+						<input type="text" name="continente" class="in" placeholder="ex: América">
+						<label class="lab">Estado:</label>
+						<input type="text" name="estado" class="in" placeholder="ex: São Paulo">
+						<label class="lab">Cidade:</label>
+						<input type="text" name="cidade" class="in" placeholder="ex: Peruibe">
+						<label class="lab">Coordenada X:</label>
+						<input type="number" name="x" class="in">
+						<label class="lab">Coordenada Y:</label>
+						<input type="number" name="y" class="in">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Personagem História</b></legend>
+						<textarea class="in" name="historia" placeholder="Escreva aqui"></textarea>
+				</fieldset>
+			</div>
+			<div class="lin">
+				<fieldset class="col">
+						<legend><b>Artes Marciais Puras:</b></legend>
+						<div class="labch">
+							<label class="lab">Puro:</label>
+							<input type="checkbox" name="es1">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves1" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Godou:</label>
+							<input type="checkbox" name="es2">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves2" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Selvagem:</label>
+							<input type="checkbox" name="es3">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves3" class="in" placeholder="1 a 300" min="1" max="300">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Artes de Guerra:</b></legend>
+						<div class="labch">
+							<label class="lab">Ronin:</label>
+							<input type="checkbox" name="es4">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves4" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Cavalaria:</label>
+							<input type="checkbox" name="es5">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves5" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Ninjustsu:</label>
+							<input type="checkbox" name="es6">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves6" class="in" placeholder="1 a 300" min="1" max="300">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Artes Marciais:</b></legend>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="labch">
+							<label class="lab">Capoeira:</label>
+							<input type="checkbox" name="es7">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves7" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Jiu Jitsu:</label>
+							<input type="checkbox" name="es8">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves8" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Shaorii:</label>
+							<input type="checkbox" name="es9">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves9" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Kung Fu:</label>
+							<input type="checkbox" name="es10">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves10" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Jiu Jitsu Br:</label>
+							<input type="checkbox" name="es11">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves11" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Muay Thai:</label>
+							<input type="checkbox" name="es12">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves12" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Krav Maga:</label>
+							<input type="checkbox" name="es13">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves13" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Karate:</label>
+							<input type="checkbox" name="es14">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves14" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Kenpo:</label>
+							<input type="checkbox" name="es15">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves15" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Pro Wrestling:</label>
+							<input type="checkbox" name="es16">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves16" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Street Fighting:</label>
+							<input type="checkbox" name="es17">
+						</div>
+						<label class="lab">Nível:</label>
+						<input type="number" name="nves17" class="in" placeholder="1 a 300" min="1" max="300">
+						<div class="labch">
+							<label class="lab">Punho animal:</label>
+							<input type="checkbox" name="es18">
+						</div>
+						<label class="lab">Nivel:</label>
+						<input type="number" name="nves18" class="in" placeholder="1 a 300" min="1" max="300">
+				</fieldset>
+			</div>
+			<div class="lin">
+				<fieldset class="col">
+						<legend><b>Mestre Informação:</b></legend>
+						<label class="lab">Nome:</label>
+						<input type="text" name="mnome" class="in" placeholder="ex: Kako Kaiho">
+						<label class="lab">Arte Marcial:</label>
+						<input type="text" name="mluta" class="in" placeholder="ex: Shawori">
+						<label class="lab">Nível na arte:</label>
+						<input type="number" name="nvmestre" class="in" placeholder="1 a 300" min="1" max="300">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Mestre Médidas:</b></legend>
+						<label class="lab">Idade:</label>
+						<input type="number" name="midade" class="in" placeholder="10 a 150" min="10" max="190">
+						<label class="lab">Altura:</label>
+						<input type="number" name="maltura" class="in" placeholder="1.40 a 4" min="1.40" max="4">
+						<label class="lab">Peso:</label>
+						<input type="number" name="mpeso" class="in" placeholder="35 a 500" min="35" max="500">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Investidor Informação:</b></legend>
+						<label class="lab">Nome:</label>
+						<input type="text" name="apnome" class="in" placeholder="ex: Kako Kaiho">
+						<label class="lab">Trabalho:</label>
+						<input type="text" name="mluta" class="in" placeholder="ex: Shawori">
+						<label class="lab">Salário investido:</label>
+						<input type="number" name="salario" class="in" placeholder="0 a 500.000.000" min="1" max="500000000">
+				</fieldset>
+				<fieldset class="col">
+						<legend><b>Investidor Médidas:</b></legend>
+						<label class="lab">Idade:</label>
+						<input type="number" name="apidade" class="in" placeholder="10 a 150" min="10" max="190">
+						<label class="lab">Altura:</label>
+						<input type="number" name="maltura" class="in" placeholder="1.40 a 4" min="1.40" max="4">
+						<label class="lab">Peso:</label>
+						<input type="number" name="mpeso" class="in" placeholder="35 a 500" min="35" max="500">
+				</fieldset>
+			</div>
+			<div class="lin"></div>
+		</form>
+		<div class="topo">
+
+			<img src="imagens\baki.png" alt="logo" id="logo">
+		</div>
+	</body>
+	<script src="script\botão.js"></script>
+	<script src="script\mouse.js"></script>
+</html>
