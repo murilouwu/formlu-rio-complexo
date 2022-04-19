@@ -18,5 +18,5 @@ bt2.addEventListener('click', function() {
 bt3.addEventListener('click', function() {
 	div1.style.display = 'none';
 	div2.style.display = 'none';
-	div3.style.display = 'flex';
+	div3.style.display = 'block';
 });

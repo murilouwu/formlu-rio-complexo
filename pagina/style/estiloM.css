@@ -71,7 +71,7 @@ body{
 	width: 3vw;
 	height: 2vh;
 }
-.dp, .end, .con, .form{
+.dp, .end, .con, .form, .imgs{
 	margin-left: 2vw;
 	border-radius: 0px 0px 30px 30px;
 	background-color: rgba(233, 153, 153, 0.7);
@@ -200,8 +200,4 @@ input[type=checkbox]:checked:after {
 	height: 5vh;
 	margin-left: 43vw;
 	font-size: 3vh;
-}
-.b{
-
-	display: block;
 }

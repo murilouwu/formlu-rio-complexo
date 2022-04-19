@@ -9,7 +9,16 @@
 	cursor: none;
 	font-family: 'blood';
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(103, 102, 140);
+    border-radius: 6px;
+}
 body::-webkit-scrollbar{
+
 	display: none;
 }
 	body{
@@ -91,6 +100,7 @@ body::-webkit-scrollbar{
 				border-width: 6px;
 				border-color: rgb(187, 186, 224, 1);
 				border-radius: 0px 0px 30px 30px;
+				display: flex;
 				flex-direction: column;
 			}
 				.informações{
@@ -126,9 +136,6 @@ body::-webkit-scrollbar{
 						height: 100%;
 					}
 						.imagem{
-							background-image: url(../imagens/ficha/face.jpg);
-							background-position: center;
-							background-size: cover;
 							border-radius: 100px 0px 0px 100px;
 							width: 40%;
 							height: 50%;
@@ -387,7 +394,116 @@ body::-webkit-scrollbar{
 				border-color: rgb(187, 186, 224, 1);
 				border-radius: 0px 0px 30px 30px;
 				display: none;
+				flex-direction: column;
 			}
+				.reg{
+					width: 100%;
+					height: 40%;
+					display: flex;
+					flex-direction: row;
+				}
+					.pais{
+						width: 40%;
+						height: 100%;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+					}
+						.pimg{
+							margin-left: 2%;
+							margin-right: 3%;
+							width: 30%;
+							height: 40%;
+							border-radius: 20px;
+							transition: all 0.25s;
+						}
+						.pimg:hover{
+							width: 31%;
+							height: 41%;
+							border: solid 4px rgb(249, 10, 35);
+						}
+						.pinfo{
+							transition: all 0.25s;
+							width: 60%;
+							height: 90%;
+							border: solid 4px rgb(187, 186, 224);
+							border-radius: 30px;
+							display: flex;
+							flex-direction: column;
+							justify-content: space-around;
+						}
+						.pinfo:hover{
+							width: 62%;
+							height: 92%;
+							border: solid 4px rgb(187, 186, 224);
+							background-color: rgba(30, 37, 48, 0.3);
+							border-color: rgb(249, 10, 35);
+							border-radius: 20px;
+						}
+					.cidade{
+						width: 60%;
+						height: 100%;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+					}
+						.himg{
+							transition: all 0.25s;
+							margin-left: 2%;
+							width: 30%;
+							height: 55%;
+							border-radius: 20px 0px 0px 20px;
+						}
+						.himg:hover{
+							width: 35%;
+							height: 60%;
+							border-radius: 20px;
+							border: solid 4px rgb(249, 10, 35);
+						}
+						.cinfo{
+							transition: all 0.25s;
+							width: 60%;
+							height: 90%;
+							border: solid 4px rgb(187, 186, 224);
+							border-radius: 30px;
+							display: flex;
+							flex-direction: column;
+							justify-content: space-around;
+						}
+						.cinfo:hover{
+							width: 62%;
+							height: 92%;
+							border: solid 4px rgb(187, 186, 224);
+							background-color: rgba(30, 37, 48, 0.3);
+							border-color: rgb(249, 10, 35);
+							border-radius: 20px;
+						}
+				.bibliografic{
+					width: 100%;
+					height: 60%;
+					border-radius: 0px 0px 25px 25px;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+				}
+					.his{
+						width: 90%;
+						height: 90%;
+						border-radius: 25px;
+						border: solid 4px rgb(187, 186, 224);
+						transition: all 0.25s;
+						color: rgb(187, 186, 224);
+						overflow: auto;
+						display: flex;
+						justify-items: center;
+					}
+					.his:hover{
+						width: 95%;
+						height: 95%;
+						background-color: rgba(30, 37, 48, 0.3);
+						border-color: rgb(249, 10, 35);
+					}
 			.skils{
 				transition: all 0.25s;
 				margin-left: 1vw;
@@ -399,6 +515,52 @@ body::-webkit-scrollbar{
 				border-width: 6px;
 				border-color: rgb(187, 186, 224, 1);
 				border-radius: 0px 0px 30px 30px;
-				background-color: rgba(0, 100, 0, 0.5);
 				display: none;
+				overflow: auto;
 			}
+				.linha{
+					width: 100%;
+					height: 30%;
+					margin-top: 2%;
+					border-radius: 25px;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+				}
+					.col{
+						width: 30%;
+						height: 100%;
+						border-radius: 30px;
+						border: solid 4px rgb(187, 186, 224);
+						display: flex;
+						flex-direction: row;
+					}
+						.limg{
+							width: 50%;
+							height: auto;
+							border-radius: 25px;
+							transition: all 0.25s;
+						}
+						.limg:hover{
+							border: solid 4px rgb(249, 10, 35);
+						}
+						.linfo{
+							transition: all 0.25s;
+							margin-top: -4px;
+							margin-left: 2%;
+							width: 45%;
+							height: 100%;
+							border-radius: 25px;
+							border: solid 4px rgb(187, 186, 224);
+							display: flex;
+							flex-direction: column;
+							justify-content: space-around;
+							align-items: center;
+						}
+						.linfo:hover{
+							width: 50%;
+							margin-right: -4px;
+							border-radius: 30px;
+							border: solid 4px rgb(249, 10, 35);
+							background-color: rgba(30, 37, 48, 0.3);
+						}
