@@ -10,6 +10,7 @@
 	font-family: 'blood';
 }
 ::-webkit-scrollbar{
+	
     width: 12px;
 }
 
@@ -340,6 +341,7 @@ body::-webkit-scrollbar{
 							border: solid 4px rgb(187, 186, 224);
 							color: rgb(187, 186, 224);
 							transition: all 0.25s;
+							overflow: auto;
 						}
 							.space{
 								margin-bottom: 2vh;
